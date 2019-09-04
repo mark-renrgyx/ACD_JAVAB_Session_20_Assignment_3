@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="students.Student" table="student">
+
+		<id name="id" type="int" column="id">
+			<generator class="native"></generator>
+		</id>
+
+		<property name="name" column="name" type="string"></property>
+		<property name="marks" column="marks" type="int"></property>
+		<property name="joinDate" column="join_date" type="date"></property>
+
+	</class>
+
+</hibernate-mapping>
